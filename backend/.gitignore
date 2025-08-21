@@ -1,0 +1,7 @@
+__pycache__/
+.venv
+.env
+chroma_langchain_db/
+sql_db/
+uploads/
+models/

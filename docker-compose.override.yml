@@ -1,0 +1,13 @@
+# docker-compose.override.yml
+# This file is automatically used in local development.
+# It adds GPU support to the ollama service if available.
+
+services:
+  ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

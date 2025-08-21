@@ -1,0 +1,1 @@
+This folder shares the logic and contains helpers codes that could be reused.

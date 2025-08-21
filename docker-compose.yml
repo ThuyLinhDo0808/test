@@ -1,0 +1,74 @@
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - NEXTAUTH_URL=http://localhost
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost/api
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend      
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - ollama 
+      - redis
+    volumes: 
+      - db_data:/app/chroma_langchain_db
+      - db_data:/app/sql_db
+      - uploads:/app/uploads  
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama 
+    entrypoint: >
+      sh -c "ollama serve"
+    tty: true
+    restart: unless-stopped
+
+  worker:
+    build: ./backend
+    command: celery -A app.tasks.worker worker --loglevel=info --pool=solo
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - redis
+      - backend
+      - ollama
+    volumes:
+      - db_data:/app/chroma_langchain_db
+      - uploads:/app/uploads
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  ollama_data:
+  db_data:
+  uploads:
