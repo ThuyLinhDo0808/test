@@ -1,0 +1,13 @@
+__pycache__/
+**/realtimesst.log
+<<<<<<< HEAD
+/tests
+=======
+/tests
+.env
+.env.*
+*.env
+backend/llm_config.json
+secrets.*
+*.key
+>>>>>>> a3e73f24fdecda8ff20136cc16c840bbb297c079

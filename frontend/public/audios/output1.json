@@ -1,0 +1,86 @@
+[
+    {
+        "grapheme": "Hi",
+        "phoneme": "h\u02c8I",
+        "start": 0.325,
+        "end": 0.525
+    },
+    {
+        "grapheme": "there",
+        "phoneme": "\u00f0\u02c8\u025b\u0279",
+        "start": 0.525,
+        "end": 0.7
+    },
+    {
+        "grapheme": ",",
+        "phoneme": ",",
+        "start": 0.7,
+        "end": 0.7375
+    },
+    {
+        "grapheme": "my",
+        "phoneme": "mI",
+        "start": 0.7375,
+        "end": 0.875
+    },
+    {
+        "grapheme": "name",
+        "phoneme": "n\u02c8Am",
+        "start": 0.875,
+        "end": 1.075
+    },
+    {
+        "grapheme": "is",
+        "phoneme": "\u026az",
+        "start": 1.075,
+        "end": 1.2375
+    },
+    {
+        "grapheme": "Aura",
+        "phoneme": "\u02c8\u0254\u0279\u0259",
+        "start": 1.2375,
+        "end": 1.7
+    },
+    {
+        "grapheme": ",",
+        "phoneme": ",",
+        "start": 1.7,
+        "end": 1.825
+    },
+    {
+        "grapheme": "how",
+        "phoneme": "h\u02ccW",
+        "start": 1.825,
+        "end": 2.0
+    },
+    {
+        "grapheme": "can",
+        "phoneme": "k\u00e6n",
+        "start": 2.0,
+        "end": 2.1125
+    },
+    {
+        "grapheme": "I",
+        "phoneme": "\u02ccI",
+        "start": 2.1125,
+        "end": 2.2
+    },
+    {
+        "grapheme": "help",
+        "phoneme": "h\u02c8\u025blp",
+        "start": 2.2,
+        "end": 2.45
+    },
+    {
+        "grapheme": "you",
+        "phoneme": "ju",
+        "start": 2.45,
+        "end": 2.8625
+    },
+    {
+        "grapheme": "?",
+        "phoneme": "?",
+        "start": 2.8625,
+        "end": 3.125
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "grapheme": "Good",
+        "phoneme": "\u0261\u02c8\u028ad",
+        "start": 0.3,
+        "end": 0.475
+    },
+    {
+        "grapheme": "days",
+        "phoneme": "d\u02c8Az",
+        "start": 0.475,
+        "end": 1.0
+    },
+    {
+        "grapheme": ",",
+        "phoneme": ",",
+        "start": 1.0,
+        "end": 1.075
+    },
+    {
+        "grapheme": "what",
+        "phoneme": "w\u02cc\u028ct",
+        "start": 1.075,
+        "end": 1.2125
+    },
+    {
+        "grapheme": "can",
+        "phoneme": "k\u00e6n",
+        "start": 1.2125,
+        "end": 1.3125
+    },
+    {
+        "grapheme": "I",
+        "phoneme": "\u02ccI",
+        "start": 1.3125,
+        "end": 1.4
+    },
+    {
+        "grapheme": "help",
+        "phoneme": "h\u02c8\u025blp",
+        "start": 1.4,
+        "end": 1.65
+    },
+    {
+        "grapheme": "you",
+        "phoneme": "ju",
+        "start": 1.65,
+        "end": 1.8
+    },
+    {
+        "grapheme": "with",
+        "phoneme": "w\u026a\u00f0",
+        "start": 1.8,
+        "end": 2.35
+    },
+    {
+        "grapheme": "?",
+        "phoneme": "?",
+        "start": 2.35,
+        "end": 2.525
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "nodes":[
+        {"name":"starter","node_type":"starter","position":{"x":200.65044930334875,"y":-130.6441691221923},"params":null},
+        {"name":"retrieve","node_type":"retrieve","position":{"x":221.71710180281275,"y":344.51571656651043},"params":null},
+        {"name":"rag","node_type":"rag","position":{"x":435.0,"y":640.0000000000001},"params":null},
+        {"name":"fallback","node_type":"no_answer","position":{"x":538.7578582832552,"y":174.9999999999999},"params":null},
+        {"name":"security","node_type":"security","position":{"x":-94.92434729578076,"y":170.09429939906235},"params":null},
+        {"name":"query_rewrite","node_type":"query_rewrite","position":{"x":166.49513479100472,"y":219.48220225318443},"params":null},
+        {"name":"no_document","node_type":"no_document","position":{"x":60.0,"y":634.6},"params":null},
+        {"name":"ender1","node_type":"ender","position":{"x":473.0,"y":789.0},"params":null},
+        {"name":"ender2","node_type":"ender","position":{"x":-8.000000000000057,"y":779.0},"params":null},
+        {"name":"ender3","node_type":"ender","position":{"x":556.0,"y":340.0},"params":null},
+        {"name":"ender4","node_type":"ender","position":{"x":-108.157165665104,"y":392.3015448920304},"params":null}],
+    "edges":[
+        {"from_node":"query_rewrite","to_node":"retrieve","connect_type":"direct","edge_type":"","position":{"x":0.0,"y":0.0},"params":null},
+        {"from_node":"rag","to_node":"ender1","connect_type":"direct","edge_type":"","position":{"x":0.0,"y":0.0},"params":null},
+        {"from_node":"no_document","to_node":"ender2","connect_type":"direct","edge_type":"","position":{"x":0.0,"y":0.0},"params":null},
+        {"from_node":"fallback","to_node":"ender3","connect_type":"direct","edge_type":"","position":{"x":0.0,"y":0.0},"params":null},
+        {"from_node":"security","to_node":"ender4","connect_type":"direct","edge_type":"","position":{"x":0.0,"y":0.0},"params":null},
+        {"from_node":"starter","to_node":{"security_check":"security","database_search":"query_rewrite","general_answer":"fallback"},"connect_type":"conditional","edge_type":"routing","position":{"x":154.0,"y":18.999999999999858},"params":null},
+        {"from_node":"retrieve","to_node":{"no":"no_document","yes":"rag"},"connect_type":"conditional","edge_type":"no_document","position":{"x":199.2464243290401,"y":474.12555835105275},"params":null}],
+    "entry_node":"starter",
+    "end_nodes":[],
+    "allowed_nodes":["rag","fallback","security","no_document"]
+}

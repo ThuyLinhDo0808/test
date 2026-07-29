@@ -1,0 +1,43 @@
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+fastapi==0.115.9
+uvicorn==0.34.3
+python-multipart==0.0.20
+python-dotenv==1.1.0
+
+# WORKFLOW
+langchain-ollama==0.3.3
+langchain-chroma==0.2.4
+langchain-deepseek==0.1.4
+langchain==0.3.25
+langchain-community==0.3.24
+langgraph==0.4.8
+torch==2.7.1
+
+# Documents
+docx2txt==0.9
+pypdf==5.6.0
+celery[redis]==5.5.3
+unstructured==0.18.3
+python-docx==1.2.0
+
+# STT and TTS
+# RealtimeSTT==0.3.104
+kokoro==0.9.4
+
+PyAudio==0.2.14
+faster-whisper==1.1.1
+pvporcupine==3.0.0
+webrtcvad-wheels==2.0.14
+halo==0.0.31
+torchaudio
+scipy==1.15.2
+openwakeword>=0.4.0
+websockets==15.0.1
+websocket-client==1.8.0
+soundfile==0.13.1
+
+# Liveness
+opencv-python
+insightface==0.7.3
+mediapipe==0.10.21

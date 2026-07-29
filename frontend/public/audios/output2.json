@@ -1,0 +1,86 @@
+[
+    {
+        "grapheme": "Hello",
+        "phoneme": "h\u0259l\u02c8O",
+        "start": 0.325,
+        "end": 0.725
+    },
+    {
+        "grapheme": ",",
+        "phoneme": ",",
+        "start": 0.725,
+        "end": 0.775
+    },
+    {
+        "grapheme": "my",
+        "phoneme": "mI",
+        "start": 0.775,
+        "end": 0.925
+    },
+    {
+        "grapheme": "name",
+        "phoneme": "n\u02c8Am",
+        "start": 0.925,
+        "end": 1.1125
+    },
+    {
+        "grapheme": "is",
+        "phoneme": "\u026az",
+        "start": 1.1125,
+        "end": 1.2625
+    },
+    {
+        "grapheme": "Aura",
+        "phoneme": "\u02c8\u0254\u0279\u0259",
+        "start": 1.2625,
+        "end": 1.775
+    },
+    {
+        "grapheme": ",",
+        "phoneme": ",",
+        "start": 1.775,
+        "end": 1.9
+    },
+    {
+        "grapheme": "what",
+        "phoneme": "w\u02cc\u028ct",
+        "start": 1.9,
+        "end": 2.0375
+    },
+    {
+        "grapheme": "can",
+        "phoneme": "k\u00e6n",
+        "start": 2.0375,
+        "end": 2.1375
+    },
+    {
+        "grapheme": "I",
+        "phoneme": "\u02ccI",
+        "start": 2.1375,
+        "end": 2.225
+    },
+    {
+        "grapheme": "help",
+        "phoneme": "h\u02c8\u025blp",
+        "start": 2.225,
+        "end": 2.475
+    },
+    {
+        "grapheme": "you",
+        "phoneme": "ju",
+        "start": 2.475,
+        "end": 2.575
+    },
+    {
+        "grapheme": "with",
+        "phoneme": "w\u026a\u00f0",
+        "start": 2.575,
+        "end": 3.15
+    },
+    {
+        "grapheme": "?",
+        "phoneme": "?",
+        "start": 3.15,
+        "end": 3.35
+    }
+]
